@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laurel Murphy Blog</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="blog.css">
+    <script src="../main.js" defer></script>
+    <script src="../main.js" defer></script>
+</head>
+<body>
+    <div class="page-container"></div>
+        <header class="header">
+            <nav class="nav">
+                <a href="../index.html" class="home-specs"><img class="home-button" src="../content/home_dark_grey.png" alt="Home"></a>
+
+                <div class="right">
+                    <a href="../projects/projects.html">Projects</a>
+                    <a href="../blog/blog.html">Blog</a>
+                    <a href="https://www.linkedin.com/in/jasper-murphy/">LinkedIn</a>
+                    
+                    <a href="https://github.com/LJMurphyy">
+                        <img class="gh-logo" src="../content/github-mark.png" alt="GitHub" />
+                    </a>
+
+                </div>
+            </nav>
+        </header>
+
+        <button id="backToTop"><img class="up-arrow" src="../content/arrow_upward_dark_grey.png" alt="Up Arrow"></button>
+
+        <main>
+            <div class="specs m-auto m-bottom">
+
+                <div id="blog-posts"></div>
+                <script src="blog.js"></script>
+            
+                <!-- 2nd Post -->
+                <h1 class="blog-title">Devoloped Daily SMS Schedule</h1>
+                <p id="sub-title">August 2024</p>
+                <div class="seperator"></div>
+                <article>
+                    <p>
+                        In our fast-paced lives, keeping track of daily schedules can be challenging.
+                        That's where my Daily SMS Schedule program comes in! This Python-based application automates 
+                        the process of sending you a text message every morning, detailing your schedule for the day.
+                        Let's dive into how this project works and the technologies that power it.
+                    </p>
+                    <h3>Python Libraries:</h3>
+                        <ul class="post-list">
+                            <li><strong>datetime</strong> and <strong>calendar</strong>: To retrieve current day of the week.</li>
+                            <li><strong>smtplib</strong> and <strong>email.mime.text</strong>: To send SMS messages through email gateways</li>
+                        </ul>
+                    <h3>Configuration:</h3>
+                    <p>
+                        The scheduler pulls essential configurations from a dedicated configuration module. 
+                        This includes your email credentials and the recipient's number formatted for SMS 
+                        delivery through various providers.
+                    </p>
+                    <h3>Weekly Scheduling:</h3>
+                    <p>
+                        The <strong>Schedule</strong> module contains a structured dictionary mapping each day of the week to specific tasks. 
+                        This allows for flexible customization based on your daily needs.
+                    </p>
+                    <h3>SMS Providers</h3>
+                    <p>
+                        The <strong>Providers</strong> module contains information about various SMS gateways, 
+                        enabling the script to send messages via different service providers.
+                    </p>
+                    <h3>Future:</h3>
+                    <p>Retrieve data from a calendar service to dynamically update your daily tasks.</p>
+                    <p>Make it an executable.</p>
+                    <p>Have it automatically run at a certain time everyday.</p>
+                    
+                    
+                </article>
+
+                <!-- 1st Post -->
+                <h1 class="blog-title">Devoloped Cleaner</h1>
+                <p id="sub-title">July 2024</p>
+                <div class="seperator"></div>
+                <article>
+                    <p>Cleaner is an automation program dedicated to cleaning up your PC, written with Python.</p>
+                    <h3>Version 1 Features:</h3>
+                    <p>A GUI created with PySide6:</p>
+                    <img  class="blog-img" src="../content/cleaner_main_menu.png" alt="Cleaner Main Page">
+                    <img class="blog-img" src="../content/cleaner_downloads.png" alt="Cleaner Downloads">
+                    <p>Parses the files by file extension and then sorts them into following directories:</p>
+                    <ul class="first-post-list">
+                        <li>Applications</li>
+                        <li>System</li>
+                        <li>Code</li>
+                        <li>Archive</li>
+                        <li>Audio</li>
+                        <li>Videos</li>
+                        <li>Images</li>
+                        <li>Documents</li>
+                    </ul>
+                    <h3>Future:</h3>
+                    <p>Create desktop cleaner.</p>
+                    <p>Empty trash button.</p>
+                </article>
+            </div>
+        </div>
+        </main>
+    </div>
+    <script src="../main.js" defer></script>
+</body>
+</html>

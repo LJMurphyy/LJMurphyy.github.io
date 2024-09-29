@@ -1,0 +1,31 @@
+.blog-title {
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+.seperator {
+    border-bottom: 0.1rem solid #bcbcbc; 
+}
+
+#sub-title {
+    margin: 0;
+}
+
+.blog-content {
+    border-bottom: 0.1rem solid #bcbcbc;;
+}
+
+h3 {
+    color: #ffffff;
+}
+
+.blog-img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; 
+}
+
+article {
+    margin-bottom: 5rem;
+    padding: 1rem;
+}
